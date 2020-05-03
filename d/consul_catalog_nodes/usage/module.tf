@@ -1,5 +1,5 @@
 module "consul_catalog_nodes" {
-  source = "./consul/d/consul_catalog_nodes"
+  source = "./modules/consul/d/consul_catalog_nodes"
 
 
   query_options = [{

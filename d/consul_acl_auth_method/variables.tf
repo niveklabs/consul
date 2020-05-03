@@ -15,6 +15,12 @@ variable "name" {
   type        = string
 }
 
+variable "namespace" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "type" {
   description = "(optional)"
   type        = string

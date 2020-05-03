@@ -1,5 +1,5 @@
 module "consul_prepared_query" {
-  source = "./consul/r/consul_prepared_query"
+  source = "./modules/consul/r/consul_prepared_query"
 
   connect      = null
   datacenter   = null

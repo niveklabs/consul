@@ -1,7 +1,8 @@
 module "consul_keys" {
-  source = "./consul/d/consul_keys"
+  source = "./modules/consul/d/consul_keys"
 
   datacenter = null
+  namespace  = null
   token      = null
 
   key = [{

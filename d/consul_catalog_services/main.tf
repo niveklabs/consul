@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    consul = ">= 2.6.1"
+    consul = ">= 2.7.0"
   }
 }
 
@@ -11,6 +11,7 @@ data "consul_catalog_services" "this" {
     content {
       allow_stale        = query_options.value["allow_stale"]
       datacenter         = query_options.value["datacenter"]
+      namespace          = query_options.value["namespace"]
       near               = query_options.value["near"]
       node_meta          = query_options.value["node_meta"]
       require_consistent = query_options.value["require_consistent"]

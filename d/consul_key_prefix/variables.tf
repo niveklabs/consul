@@ -4,6 +4,12 @@ variable "datacenter" {
   default     = null
 }
 
+variable "namespace" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "path_prefix" {
   description = "(required)"
   type        = string

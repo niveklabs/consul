@@ -1,8 +1,9 @@
-# Consul Provider
+# consul Provider
 
-```terraform
+[embedmd]:# (consul.tf)
+```tf
 provider "consul" {
-  version = "2.6.1"
+  version = "2.7.0"
 
   address        = null
   ca_file        = null
@@ -12,6 +13,7 @@ provider "consul" {
   http_auth      = null
   insecure_https = null
   key_file       = null
+  namespace      = null
   scheme         = null
   token          = null
 }

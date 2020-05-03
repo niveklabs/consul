@@ -27,6 +27,12 @@ variable "name" {
   type        = string
 }
 
+variable "namespace" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "node" {
   description = "(required)"
   type        = string

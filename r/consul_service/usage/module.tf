@@ -1,11 +1,12 @@
 module "consul_service" {
-  source = "./consul/r/consul_service"
+  source = "./modules/consul/r/consul_service"
 
   address    = null
   datacenter = null
   external   = null
   meta       = {}
   name       = null
+  namespace  = null
   node       = null
   port       = null
   service_id = null

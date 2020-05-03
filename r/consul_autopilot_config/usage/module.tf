@@ -1,5 +1,5 @@
 module "consul_autopilot_config" {
-  source = "./consul/r/consul_autopilot_config"
+  source = "./modules/consul/r/consul_autopilot_config"
 
   cleanup_dead_servers      = null
   datacenter                = null

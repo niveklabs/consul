@@ -19,6 +19,12 @@ variable "description" {
   default     = null
 }
 
+variable "namespace" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "selector" {
   description = "(optional) - The expression used to math this rule against valid identities returned from an auth method validation."
   type        = string

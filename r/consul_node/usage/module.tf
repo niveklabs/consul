@@ -1,5 +1,5 @@
 module "consul_node" {
-  source = "./consul/r/consul_node"
+  source = "./modules/consul/r/consul_node"
 
   address    = null
   datacenter = null

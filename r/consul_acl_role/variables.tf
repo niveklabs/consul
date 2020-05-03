@@ -9,6 +9,12 @@ variable "name" {
   type        = string
 }
 
+variable "namespace" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "policies" {
   description = "(optional) - The list of policies that should be applied to the role."
   type        = set(string)

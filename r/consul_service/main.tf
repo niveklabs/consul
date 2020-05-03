@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    consul = ">= 2.6.1"
+    consul = ">= 2.7.0"
   }
 }
 
@@ -10,6 +10,7 @@ resource "consul_service" "this" {
   external   = var.external
   meta       = var.meta
   name       = var.name
+  namespace  = var.namespace
   node       = var.node
   port       = var.port
   service_id = var.service_id

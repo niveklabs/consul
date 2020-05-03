@@ -1,5 +1,5 @@
 module "consul_catalog_entry" {
-  source = "./consul/r/consul_catalog_entry"
+  source = "./modules/consul/r/consul_catalog_entry"
 
   address    = null
   datacenter = null

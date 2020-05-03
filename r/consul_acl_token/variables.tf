@@ -16,8 +16,20 @@ variable "local" {
   default     = null
 }
 
+variable "namespace" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "policies" {
   description = "(optional) - List of policies."
+  type        = set(string)
+  default     = null
+}
+
+variable "roles" {
+  description = "(optional) - List of roles"
   type        = set(string)
   default     = null
 }

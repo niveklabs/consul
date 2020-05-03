@@ -21,6 +21,7 @@ variable "query_options" {
     {
       allow_stale        = bool
       datacenter         = string
+      namespace          = string
       near               = string
       node_meta          = map(string)
       require_consistent = bool

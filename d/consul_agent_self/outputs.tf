@@ -189,7 +189,7 @@ output "pid_file" {
 }
 
 output "ports" {
-  description = "returns a map of string"
+  description = "returns a map of number"
   value       = data.consul_agent_self.this.ports
 }
 

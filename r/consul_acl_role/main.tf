@@ -1,12 +1,13 @@
 terraform {
   required_providers {
-    consul = ">= 2.6.1"
+    consul = ">= 2.7.0"
   }
 }
 
 resource "consul_acl_role" "this" {
   description = var.description
   name        = var.name
+  namespace   = var.namespace
   policies    = var.policies
 
   dynamic "service_identities" {

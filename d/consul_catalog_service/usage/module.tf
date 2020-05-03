@@ -1,5 +1,5 @@
 module "consul_catalog_service" {
-  source = "./consul/d/consul_catalog_service"
+  source = "./modules/consul/d/consul_catalog_service"
 
   datacenter = null
   name       = null
@@ -8,6 +8,7 @@ module "consul_catalog_service" {
   query_options = [{
     allow_stale        = null
     datacenter         = null
+    namespace          = null
     near               = null
     node_meta          = {}
     require_consistent = null

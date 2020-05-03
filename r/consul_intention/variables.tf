@@ -14,6 +14,12 @@ variable "destination_name" {
   type        = string
 }
 
+variable "destination_namespace" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "meta" {
   description = "(optional)"
   type        = map(string)
@@ -23,5 +29,11 @@ variable "meta" {
 variable "source_name" {
   description = "(required)"
   type        = string
+}
+
+variable "source_namespace" {
+  description = "(optional)"
+  type        = string
+  default     = null
 }
 

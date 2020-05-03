@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    consul = ">= 2.6.1"
+    consul = ">= 2.7.0"
   }
 }
 
@@ -9,6 +9,7 @@ resource "consul_acl_binding_rule" "this" {
   bind_name   = var.bind_name
   bind_type   = var.bind_type
   description = var.description
+  namespace   = var.namespace
   selector    = var.selector
 }
 

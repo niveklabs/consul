@@ -1,5 +1,5 @@
 module "consul_service_health" {
-  source = "./consul/d/consul_service_health"
+  source = "./modules/consul/d/consul_service_health"
 
   datacenter = null
   name       = null
